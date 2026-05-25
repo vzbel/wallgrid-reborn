@@ -1,0 +1,29 @@
+@baseUrl = http://localhost:3001/api/wallpapers
+
+
+### create a wallpaper
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+  "url": "https://images.unsplash.com/photo-1778525211398-83a1389ddda8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "desc": "dosefasee"
+}
+
+### get all wallpapers
+GET {{baseUrl}}
+
+### get one wallpaper by id
+GET {{baseUrl}}/6a14b8f979d47edfc2af1564
+
+### update wallpaper
+PUT {{baseUrl}}/6a14b8f979d47edfc2af1564
+Content-Type: application/json
+
+{
+  "url": "https://images.unsplash.com/photo-1778525211398-83a1389ddda8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "desc": "peak"
+}
+
+### delete one wallpaper by id
+DELETE {{baseUrl}}/6a14c4dcd2671001cf7aa03a
