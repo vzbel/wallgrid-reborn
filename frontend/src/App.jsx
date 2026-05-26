@@ -1,7 +1,9 @@
+import HomePage from "./pages/HomePage";
+
 const App = () => {
   return (
     <>
-      <p>Wallgrid frontend</p>
+      <HomePage />
     </>
   );
 };
