@@ -6,7 +6,7 @@
  * src: image url
  */
 
-const Image = (props) => {
+const ImageFluid = (props) => {
   let outerClass = "rounded-md shadow-md overflow-hidden";
   if (props.className) {
     outerClass += " " + props.className;
@@ -19,4 +19,4 @@ const Image = (props) => {
   );
 };
 
-export default Image;
+export default ImageFluid;
