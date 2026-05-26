@@ -6,4 +6,4 @@
 export const inputBaseClasses =
   "block outline outline-gray-300 rounded-xs p-1 w-full";
 
-export const buttonBaseClasses = "block rounded-xs outline outline-gray-200 shadow-xs p-2 cursor-pointer";
+export const buttonBaseClasses = "block rounded-xs outline outline-gray-200 shadow-xs py-2 px-3 cursor-pointer";
