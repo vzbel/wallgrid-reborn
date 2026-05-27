@@ -8,6 +8,10 @@ const MORGAN_FORMAT =
   ":method :url :status :res[content-length] - :response-time ms :body";
 
 const app = express();
+
+// serve static files for frontend
+app.use(express.static("./dist"));
+
 // parse json body, e.g. on POST or PUT reqs
 app.use(express.json());
 // log requests
